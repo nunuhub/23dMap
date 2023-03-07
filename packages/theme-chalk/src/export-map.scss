@@ -1,0 +1,131 @@
+@import 'mixins/mixins';
+@import 'common/var';
+@import 'legend';
+
+@include b(export-map) {
+  .export-button {
+    float: right;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    right: 80px;
+    top: 20px;
+  }
+
+  .export-map-content {
+    background-color: violet;
+  }
+}
+
+@include b(export-map-content) {
+  .box-card > .el-card__header {
+    padding: 8px 20px;
+    background-color: rgb(48, 73, 110) !important;
+  }
+  .el-card {
+    position: absolute;
+    z-index: 2001;
+    top: 20px;
+    right: 20px;
+    border: none;
+    max-height: 100%;
+    overflow-y: auto;
+    transition: 0s;
+  }
+  .export-map-header {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    line-height: 30px;
+  }
+
+  .export-body {
+    padding: 12px;
+  }
+  .el-form-item {
+    margin-bottom: 8px;
+  }
+
+  .el-collapse-item__header {
+    border-bottom: none;
+    font-size: 14px;
+    color: black;
+  }
+  .el-collapse-item__wrap {
+    border-bottom: none;
+  }
+  .el-collapse {
+    border-top: none;
+    border-bottom: none;
+  }
+  .print-content {
+    z-index: 2000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: auto;
+    background: white;
+  }
+
+  .export-btn {
+    background-color: rgb(48, 73, 110) !important;
+    color: white !important;
+  }
+
+  .box-card {
+    background: white !important;
+    opacity: 1 !important;
+  }
+
+  .printOutFrame {
+    position: absolute;
+    transform: scale(var(--scale));
+    width: var(--width);
+    height: var(--height);
+    top: var(--top);
+    left: var(--left);
+    border: 1px solid black;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+
+  .printInnerFrame {
+    position: absolute;
+    width: var(--width);
+    height: var(--height);
+    top: var(--top);
+    left: var(--left);
+    border: 2px solid black;
+  }
+
+  .legendFrame {
+    position: absolute;
+    bottom: var(--bottom);
+    right: var(--right);
+    z-index: 2000;
+  }
+
+  .printTitle {
+    position: absolute;
+    left: var(--left);
+    bottom: var(--bottom);
+  }
+
+  .printAuthor {
+    position: absolute;
+    left: var(--left);
+    bottom: var(--bottom);
+  }
+
+  .printTime {
+    position: absolute;
+    left: var(--left);
+    bottom: var(--bottom);
+  }
+
+  .printScale {
+    position: absolute;
+    left: var(--left);
+    bottom: var(--bottom);
+  }
+}

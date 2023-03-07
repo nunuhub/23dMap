@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="icon/map/dark/tool/工具" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon" transform="translate(1.000000, 1.000000)" fill-rule="nonzero">
+            <path d="M10.85,0 C11.0432997,0 11.2,0.156700338 11.2,0.35 L11.2,2.8 L13.65,2.8 C13.8432997,2.8 14,2.95670034 14,3.15 L14,13.65 C14,13.8432997 13.8432997,14 13.65,14 L0.35,14 C0.156700338,14 0,13.8432997 0,13.65 L0,3.15 C0,3.05717423 0.0368748941,2.96815036 0.102512627,2.90251263 C0.168150359,2.83687489 0.257174229,2.8 0.35,2.8 L2.8,2.8 L2.8,0.35 C2.8,0.156700338 2.95670034,0 3.15,0 L10.85,0 Z M12.6,4.2 L1.4,4.2 L1.4,12.6 L12.6,12.6 L12.6,4.2 Z M9.8,1.4 L4.2,1.4 L4.2,2.8 L9.8,2.8 L9.8,1.4 L9.8,1.4 Z" id="color_w" fill="#FFFFFF"></path>
+            <polygon id="color_g" fill="#00FFFF" points="2.8 6.3 11.2 6.3 11.2 7.7 2.8 7.7"></polygon>
+        </g>
+    </g>
+</svg>

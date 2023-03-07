@@ -1,0 +1,17 @@
+@import 'mixins/mixins';
+@import 'common/var';
+
+@include b(file-export) {
+  .file-export-content {
+    padding: 10px 20px;
+
+    .el-form-item {
+      margin-bottom: 0 !important;
+
+      .el-select {
+        margin: 0;
+        width: 100%;
+      }
+    }
+  }
+}

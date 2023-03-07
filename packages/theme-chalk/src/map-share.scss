@@ -1,0 +1,31 @@
+@import 'mixins/mixins';
+@import 'common/var';
+
+@include b(map-share) {
+  .shareUrl {
+    margin: 10px;
+    position: relative;
+  }
+  .copyUrl {
+    cursor: pointer;
+    width: 86px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #f0884a;
+    border-radius: 0 4px 4px 0;
+    color: #fff;
+  }
+  .el-input-group__prepend {
+    background-color: #fff;
+    border-right: none;
+    padding: 0 0 0 5px;
+    cursor: pointer;
+  }
+  .el-input__inner {
+    padding-left: 5px;
+  }
+}

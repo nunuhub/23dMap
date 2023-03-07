@@ -1,0 +1,43 @@
+@import 'mixins/mixins';
+@import 'common/var';
+
+@include b(general-button) {
+  background-color: var(--backgroundColor);
+  background-image: var(--backgroundImage);
+  background-size: contain;
+  border-radius: var(--radius);
+  box-shadow: rgb(41 47 54 / 60%) 0 0 10px 0.5px;
+  cursor: default;
+  padding: var(--paddingTop) var(--paddingRight) var(--paddingBottom)
+    var(--paddingLeft);
+  min-height: 32px;
+  min-width: 32px;
+  border: transparent;
+  display: flex;
+  align-items: center;
+  /*BI用样式,不影响本地*/
+  justify-content: center;
+
+  &.sh-general-button:hover {
+    background-color: var(--backgroundHoverColor) !important;
+  }
+  &.content-column {
+    flex-direction: column;
+    /*padding: 8px 4px 8px 4px;*/
+  }
+  &.general-btn-active {
+    background-color: var(--backgroundActiveColor);
+  }
+
+  .label {
+    margin-left: 4px;
+  }
+  .label-column {
+    margin-top: 4px;
+  }
+  .general-btn-label {
+    color: var(--fontColor);
+    font-size: var(--fontSize);
+    /*vertical-align: middle;*/
+  }
+}

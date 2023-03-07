@@ -1,0 +1,28 @@
+.demo-general-card {
+  .card-container {
+    height: 100px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .theme-demo3
+    .sh-layer-manager
+    .layer-tree
+    .el-tree
+    .el-tree-node
+    .el-tree-node__content
+    .custom-tree-node
+    .layerlabel {
+    color: white;
+  }
+
+  .theme-demo3
+    .sh-layer-manager.dark
+    .layer-tree
+    .el-tree-node
+    .el-tree-node__content
+    .custom-tree-node
+    .layerlabel {
+    color: rgb(255, 200, 200);
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "zh-CN": [
+    {
+      "name": "更新日志",
+      "path": "/changelog"
+    },
+    {
+      "name": "开发指南",
+      "children": [
+        {
+          "path": "/installation",
+          "name": "安装"
+        },
+        {
+          "path": "/quickstart",
+          "name": "快速上手"
+        },
+        {
+          "path": "/faq",
+          "name": "常见问题"
+        }
+      ]
+    },
+    {
+      "name": "组件",
+      "groups": [
+        {
+          "groupName": "基础组件",
+          "list": [
+            {
+              "path": "/general-card",
+              "title": "GeneralCard 基础面板"
+            },
+            {
+              "path": "/general-bar",
+              "title": "GeneralBar 基础工具条"
+            }
+          ]
+        },
+        {
+          "groupName": "地图/地球基础组件",
+          "list": [
+            {
+              "path": "/config-provider",
+              "title": "ConfigProvider 全局化配置"
+            },
+            {
+              "path": "/map",
+              "title": "Map 二维地图"
+            },
+            {
+              "path": "/earth",
+              "title": "Earth 三维地球"
+            },
+            {
+              "path": "/map-earth",
+              "title": "MapEarth 二三维地图"
+            }
+          ]
+        },
+        {
+          "groupName": "二三维通用组件",
+          "list": [
+            {
+              "path": "/layer-switcher",
+              "title": "LayerSwitcher 底图切换"
+            },
+            {
+              "path": "/layer-manager",
+              "title": "LayerManager 图层目录"
+            },
+            {
+              "path": "/identify-popup",
+              "title": "IdentifyPopup 查询弹窗"
+            },
+            {
+              "path": "/navigate",
+              "title": "Navigate 行政区导航"
+            },
+            {
+              "path": "/scheme-layer",
+              "title": "SchemeLayer 方案图层"
+            },
+            {
+              "path": "/map-share",
+              "title": "MapShare 地图分享"
+            },
+            {
+              "path": "/tool-bar",
+              "title": "ToolBar 工具条"
+            },
+            {
+              "path": "/hawk-eye",
+              "title": "HawkEye 鹰眼",
+              "disabled": true
+            },
+            {
+              "path": "/roller-blind",
+              "title": "RollerBlind 卷帘"
+            },
+            {
+              "path": "/legend",
+              "title": "Legend 图例"
+            },
+            {
+              "path": "/general-mask",
+              "title": "GeneralMask 掩膜"
+            }
+          ]
+        },
+        {
+          "groupName": "二维地图工具类组件",
+          "list": [
+            {
+              "path": "/draw-tool",
+              "title": "DrawTool 二维绘制工具"
+            },
+            {
+              "path": "/map-measure",
+              "title": "MapMeasure 地图测量"
+            },
+            {
+              "path": "/file-import",
+              "title": "FileImport 文件导入"
+            },
+            {
+              "path": "/file-export",
+              "title": "FileExport 文件导出"
+            },
+            {
+              "path": "/export-map",
+              "title": "ExportMap 制图"
+            },
+            {
+              "path": "/select-tool",
+              "title": "SelectTool 选择"
+            },
+            {
+              "path": "/save-tool",
+              "title": "SaveTool 保存"
+            },
+            {
+              "path": "/delete-tool",
+              "title": "DeleteTool 删除"
+            },
+            {
+              "path": "/plot-tool",
+              "title": "PlotTool 标绘"
+            },
+            {
+              "path": "/cutting-layer",
+              "title": "CuttingLayer 图层裁剪"
+            },
+            {
+              "path": "/place-search",
+              "title": "PlaceSearch 一键搜索"
+            }
+          ]
+        },
+        {
+          "groupName": "三维地图工具类组件",
+          "list": [
+            {
+              "path": "/draw-tool3d",
+              "title": "DrawTool3d 绘制工具"
+            },
+            {
+              "path": "/book-mark3d",
+              "title": "BookMark3d 场景视廊"
+            },
+            {
+              "path": "/roam3d",
+              "title": "Roam3d 飞行漫游"
+            },
+            {
+              "path": "/spatial-analysis3d",
+              "title": "SpatialAnalysis3d 空间分析"
+            },
+            {
+              "path": "/map-measure3d",
+              "title": "MapMeasure3d 三维测量"
+            },
+            {
+              "path": "/scene-split3d",
+              "title": "SceneSplit3d 分屏"
+            },
+            {
+              "path": "/clip-tools",
+              "title": "ClipTools 模型裁切"
+            },
+            {
+              "path": "/flatten-tools",
+              "title": "FlattenTools 开挖压平"
+            },
+            {
+              "path": "/base-control3d",
+              "title": "BaseControl3d 基础配置"
+            },
+            {
+              "path": "/earth-video",
+              "title": "EarthVideo 监控投影",
+              "disabled": true
+            }
+          ]
+        },
+        {
+          "groupName": "二维地图可视化组件",
+          "list": [
+            {
+              "path": "/bubble-layer",
+              "title": "BubbleLayer 气泡图"
+            },
+            {
+              "path": "/cluster-layer",
+              "title": "ClusterLayer 聚合图层"
+            },
+            {
+              "path": "/heatmap-layer",
+              "title": "HeatmapLayer 热力图图层"
+            },
+            {
+              "path": "/highcharts-layer",
+              "title": "HighchartsLayer Highcharts图层"
+            },
+            {
+              "path": "/scatter-layer",
+              "title": "ScatterLayer 散点图"
+            },
+            {
+              "path": "/masspoint-layer",
+              "title": "MasspointLayer 权重散点图"
+            },
+            {
+              "path": "/markers-layer",
+              "title": "MarkersLayer 标签图"
+            },
+            {
+              "path": "/migrate-layer",
+              "title": "MigrateLayer 迁徙图"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

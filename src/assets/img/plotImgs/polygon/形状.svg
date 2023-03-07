@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="12px" viewBox="0 0 20 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>形状</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-52" transform="translate(-900.000000, -231.000000)" fill="#8A9DBB" fill-rule="nonzero" stroke="#00F7C7">
+            <g id="编组-45备份-8" transform="translate(853.000000, 46.000000)">
+                <g id="编组-44备份-4" transform="translate(15.000000, 145.000000)">
+                    <g id="编组-43备份" transform="translate(32.000000, 35.000000)">
+                        <g id="箭头" transform="translate(10.000000, 11.000000) rotate(-270.000000) translate(-10.000000, -11.000000) translate(4.000000, 1.000000)">
+                            <path d="M1.08711032,6.5 L4.20710678,6.5 L4.35355339,6.64644661 C5.19535083,7.48824405 5.19535083,8.99508635 4.47434165,11.1581139 C3.79657395,13.191417 2.4618463,14.5993038 0.5,15.3519332 L0.5,19.1280099 C4.59437952,16.671665 6.92392839,14.2427336 7.51492875,11.8787322 C8.13977077,9.37936409 8.13977077,7.84687755 7.64644661,7.35355339 L6.79289322,6.5 L10.9128897,6.5 L6,0.768295371 L1.08711032,6.5 Z" id="形状"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,33 @@
+@import 'mixins/mixins';
+@import 'common/var';
+
+@include b(hawk-eye) {
+  .hawkEye {
+    width: 200px;
+    height: 150px;
+    border: 1px solid #8fdeff;
+    position: absolute;
+    bottom: 23px;
+    left: 10px;
+    z-index: 1;
+    transition: all 0.15s;
+  }
+
+  .showbtn {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    bottom: 139px;
+    left: 176px;
+    border-radius: 16px;
+    text-align: center;
+    line-height: 32px;
+    padding: 3px;
+    z-index: 1;
+  }
+
+  .showbtn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 8px gray;
+  }
+}

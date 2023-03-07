@@ -1,0 +1,24 @@
+@import "mixins/mixins";
+@import "common/var";
+
+@include b(map-label) {
+  .config-body {
+    padding: 12px;
+  }
+  .map-label-content .el-form-item {
+    margin-bottom: 12px;
+  }
+
+  .map-label-content
+  .el-input-number.is-controls-right
+  .el-input__inner {
+    padding-left: 0;
+    padding-right: 30px;
+  }
+
+  .bottom-btn-content {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 12px;
+  }
+}

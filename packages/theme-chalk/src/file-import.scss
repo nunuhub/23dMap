@@ -1,0 +1,86 @@
+@import 'mixins/mixins';
+@import 'common/var';
+
+@include b(file-import) {
+  .texSelect {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: saturate(180%) blur(20px);
+    box-shadow: 3px 4px 5px rgba(87, 86, 86, 0.7);
+    position: absolute;
+    z-index: 8888;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+  }
+
+  .unSupport {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: saturate(180%) blur(20px);
+    box-shadow: 3px 4px 5px rgba(87, 86, 86, 0.7);
+    position: absolute;
+    z-index: 8888;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+  }
+
+  .header {
+    width: 90%;
+    height: 30px;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+  }
+
+  .typelist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 96%;
+    margin-left: 2%;
+    margin-top: 10px;
+  }
+
+  .items {
+    width: 280px;
+    height: 30px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+  }
+
+  .radioGroup {
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+  }
+
+  .inpt {
+    cursor: pointer;
+  }
+
+  .btns {
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  input:checked + span {
+    color: #007aff;
+  }
+}

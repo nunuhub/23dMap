@@ -1,0 +1,58 @@
+{
+  "zh-CN": [
+    {
+      "name": "使用指南",
+      "children": [
+        {
+          "path": "/installation",
+          "name": "简介"
+        }
+      ]
+    },
+    {
+      "name": "API参考手册",
+      "groups": [
+        {
+          "groupName": "地图/地球基础API",
+          "list": [
+            {
+              "path": "/shine-map",
+              "title": "ShineMap 地图对象类"
+            },
+            {
+              "path": "/shine-earth",
+              "title": "ShineEarth 地球对象类"
+            }
+          ]
+        },
+        {
+          "groupName": "二三维通用组件",
+          "list": [
+            {
+              "path": "/identify",
+              "title": "Identify 查询类"
+            }
+          ]
+        },
+        {
+          "groupName": "二维地图工具类",
+          "list": [
+            {
+              "path": "/map-popup",
+              "title": "MapPopup 弹窗类"
+            }
+          ]
+        },
+        {
+          "groupName": "三维地球工具类",
+          "list": [
+            {
+              "path": "/earth-popup",
+              "title": "EarthPopup 弹窗类"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+@import "mixins/mixins";
+@import "common/var";
+
+@include b(icon-svg) {
+  display: inline-block;
+
+  .svgDiv {
+    fill: currentColor;
+    overflow: hidden;
+  }
+
+  svg {
+    width: var(--svgWidth);
+    height: var(--svgHeight);
+    padding: var(--svgPadding);
+    vertical-align: top !important;
+  }
+
+  /* 只有一个path */
+  path:nth-last-child(1):first-child {
+    fill: var(--fl1Color);
+  }
+
+  /* svg包含两个path */
+  path:nth-last-child(2):first-child ~ path {
+    fill: var(--fl2Color);
+  }
+
+  /* svg包含两个path */
+  path:nth-last-child(2):first-child {
+    fill: var(--fl1Color);
+  }
+
+  rect {
+    fill: var(--fl2Color);
+  }
+
+  polygon {
+    fill: var(--fl2Color);
+  }
+
+  path {
+    fill: var(--fl1Color);
+  }
+}

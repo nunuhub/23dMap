@@ -1,0 +1,309 @@
+@import 'mixins/mixins';
+@import 'common/var';
+
+@include b(earth-video) {
+  .videoContainer {
+    position: absolute;
+    /* bottom: 75px;
+    right: 317px; */
+    width: 320px;
+    height: 180px;
+  }
+}
+
+@include b(page-formev) {
+  label {
+    display: initial;
+    margin-bottom: inherit;
+  }
+
+  .Collapse {
+    height: 30px;
+    line-height: 30px;
+    background: #2a2d30e6;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px 4px 0 0;
+    display: flex;
+    align-content: center;
+    position: relative;
+  }
+  .Collapse i {
+    line-height: 30px;
+    margin: 0 3px 0 10px;
+  }
+  .Collapse .TEM {
+    height: 30px;
+    background: #555e67;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 32px;
+  }
+
+  .el-input.is-disabled .el-input__inner {
+    background-color: #676e74;
+    border: 1px solid #858e98;
+  }
+  .el-form-item {
+    margin-bottom: 0;
+    height: 34px;
+  }
+  .el-form-item .el-form-item__label {
+    color: #fff;
+    height: 100%;
+    padding: 0 10px 0 10px;
+    margin-bottom: 0;
+    /* padding-top: 10px; */
+    line-height: 32px;
+    font-size: 12px;
+  }
+  .el-form-item .el-form-item__content {
+    height: 100%;
+    padding: 0 10px;
+    border-left: 1px solid #2b2f32;
+  }
+  .padding_onlyleft .el-form-item__content {
+    padding: 0 0 0 10px;
+  }
+  .padding_onlyright .el-form-item__content {
+    padding: 0 10px 0 0;
+  }
+  .nopadding .el-form-item__content {
+    /*  padding: 10px;
+      height: 100%; */
+    padding: 0 10px 0 0;
+    /*  border-left: 1px solid #2b2f32; */
+  }
+  .el-form-item .el-color-picker__trigger {
+    height: 24px;
+    width: 40px;
+    padding: 2px;
+    top: 5px;
+  }
+  .el-form-item__content .el-input-number {
+    width: 100%;
+    height: 75%;
+  }
+  .nopadding .el-form-item__content .el-input-number {
+    width: 112%;
+    height: 75%;
+  }
+
+  .el-form-item__content .el-input-number .el-input-number__increase,
+  .el-form-item__content .el-input-number .el-input-number__decrease {
+    background: #4d565d;
+    color: #fff;
+    border-radius: 24px 24px 0px 0px;
+    border: 1px solid #858e98;
+    height: 12px;
+    width: 24px;
+    top: 2.4px;
+    right: 0px;
+    transform: translateY(0.5px);
+  }
+
+  .nopadding .el-form-item__content .el-input-number .el-input-number__increase,
+  .nopadding
+    .el-form-item__content
+    .el-input-number
+    .el-input-number__decrease {
+    right: 0;
+  }
+
+  .slope_slider
+    .el-form-item__content
+    .el-input-number
+    .el-input-number__increase,
+  .slope_slider
+    .el-form-item__content
+    .el-input-number
+    .el-input-number__decrease {
+    right: -24px !important;
+  }
+
+  .el-form-item__content .el-input-number .el-input-number__decrease {
+    border-radius: 0px 0px 24px 24px;
+    top: auto;
+    bottom: -0.5px;
+  }
+
+  .el-form-item__content
+    .el-input-number
+    .el-input-number__increase
+    .el-icon-arrow-up,
+  .el-form-item__content
+    .el-input-number
+    .el-input-number__decrease
+    .el-icon-arrow-down {
+    position: relative;
+    vertical-align: super;
+    transform: translateY(-1px);
+  }
+  .el-checkbox,
+  .el-radio__label {
+    color: #fff;
+  }
+
+  .nopadding .el-input__inner {
+    padding: 0 10px;
+    padding-right: 0 !important;
+    width: 100%;
+  }
+  .nopadding.el-input-number.is-controls-right .el-input__inner {
+    padding-left: 10px; // 为swg项目而加
+    padding-right: 0px;
+  }
+
+  .nopadding.is-controls-right .el-input__inner {
+    width: 43px;
+  }
+  .colorInput {
+    width: 60%;
+    margin-right: 10px;
+  }
+  .nopadding .colorInput .el-input__inner {
+    padding-left: 10px;
+    width: 72px;
+  }
+
+  .el-form-item__content .el-slider {
+    height: 32px;
+  }
+  .el-form-item__content.slider {
+    height: 100%;
+  }
+  .el-form-item__content .el-slider .el-slider__runway {
+    margin-top: 13px;
+    margin-bottom: 13px;
+  }
+  .el-form-item__content .el-switch {
+    vertical-align: baseline;
+  }
+
+  .slider .el-input__suffix-inner {
+    height: 32px;
+    position: absolute;
+    left: -11px;
+    top: -3px;
+  }
+  .el-input--suffix .el-input__inner {
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 45px;
+  }
+
+  .divContent {
+    display: flex;
+  }
+  .el-input,
+  .el-select,
+  .el-textarea {
+    height: 100%;
+  }
+  .el-select .el-input__suffix {
+    top: -3px;
+  }
+  .el-select {
+    width: 100%;
+  }
+  .el-input__inner,
+  .el-textarea__inner {
+    background: #676e74;
+    border-radius: 16px;
+    border: 1px solid #858e98;
+    color: #fff;
+    height: 24px;
+    vertical-align: 5px;
+    font-size: 12px;
+  }
+  .el-textarea__inner {
+    border-radius: 4px;
+  }
+  .slider .el-input__inner {
+    padding: 0;
+  }
+
+  .el-form-block {
+    display: block;
+    width: 100%;
+  }
+
+  .el-form-block .el-form-item__content .el-textarea {
+    width: 100%;
+  }
+
+  .el-input-number .el-input__inner {
+    text-align: left;
+  }
+  .el-icon-time:before {
+    display: block;
+    position: absolute;
+    top: -3px;
+  }
+  .el-input__icon::before {
+    display: block;
+    position: absolute;
+    top: -3px;
+  }
+
+  .el-date-editor .el-input__inner {
+    text-align: left;
+  }
+  .nopadding input {
+    padding: 0 0 0 0;
+  }
+  .position_modify .el-input__inner {
+    width: 55px;
+  }
+  .position_modify .el-input-number__increase,
+  .position_modify .el-input-number__decrease {
+    right: -4px !important;
+  }
+
+  .el-form-item__content {
+    /*空间分析的组件，看蓝湖上的样式要求，都没有中间的线条*/
+    border: 0 !important;
+  }
+
+  .btnRow {
+    height: 24px;
+    color: #fff;
+    font-size: 12px;
+    background: #1e232c;
+    border: 1px solid #467cf3;
+    border-radius: 16px;
+    margin-right: 10px;
+    padding: 7px 10px;
+  }
+  .btnRow:hover {
+    background-color: #467cf3;
+  }
+  .btnRow:active {
+    background-color: #4566b4;
+  }
+
+  .el-form-item__content {
+    font-size: 12px;
+  }
+
+  .el-input input {
+    background-color: #676e74e6 !important;
+  }
+  .el-input input {
+    background-color: #676e74e6 !important;
+  }
+
+  .el-checkbox-group {
+    transform: translateY(-4px);
+  }
+  .el-checkbox__label {
+    font-size: 12px;
+  }
+  .selected {
+    background-color: gray;
+  }
+  .el-input-number.is-controls-right .el-input__inner {
+    padding-left: 10px;
+  }
+}

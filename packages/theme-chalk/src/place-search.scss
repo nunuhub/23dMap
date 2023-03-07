@@ -1,0 +1,295 @@
+@import 'mixins/mixins';
+@import 'common/var';
+
+@include b(place-search) {
+  .searchBar {
+    width: 100%;
+    color: #9a9a9a;
+    display: flex;
+    // margin: 0px 1% 0px 1%;
+    justify-content: center;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    z-index: 8;
+  }
+  .Img {
+    width: 24px;
+    height: 24px;
+  }
+  .searchbtn {
+    color: #cecdcd;
+    cursor: pointer;
+  }
+  .searchbtn:hover {
+    color: #575757;
+  }
+  .searchLogo {
+    height: 32px;
+    width: 15%;
+    // border: 1px solid #cecdcd;
+    border-right: 0px;
+    line-height: 45px;
+    text-align: center;
+    cursor: pointer;
+    padding-right: 5px;
+  }
+  .el-input__suffix {
+    color: var(--primaryFontColor);
+  }
+  .el-input__inner {
+    width: 100%;
+    height: 32px;
+    padding-left: 0px;
+    border: none;
+    border-left: 0px;
+    background: transparent;
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
+    line-height: 32px;
+    font-size: 12px;
+    color: var(--primaryFontColor);
+    transition: all 0.5s;
+  }
+  .el-input__inner:focus {
+    // el-input输入时设置边框颜色
+    border: none;
+    border-left: 0px;
+  }
+  .el-input__icon {
+    line-height: 32px;
+    font-size: 17px;
+  }
+  .el-input__inner.dark {
+    color: #fff;
+  }
+  .el-input-group__append {
+    border-radius: 0;
+    color: var(--primaryFontColor);
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+  }
+  .el-button {
+    width: 10px;
+    padding-left: 10px;
+  }
+  .el-tooltip__popper {
+    top: -10px;
+  }
+  input::-webkit-input-placeholder {
+    color: #cecdcd;
+    font-size: 13px;
+    /* placeholder颜色  */
+  }
+  .openDropBottom {
+    width: 100%;
+    overflow: hidden;
+    max-height: 50vh;
+    transition: all 0.5s;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    color: var(--primaryFontColor);
+  }
+  .closeDropBottom {
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.5s;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    color: var(--primaryFontColor);
+  }
+  .resultPanel {
+    width: 100%;
+    min-height: 150px;
+    max-height: 40vh;
+    overflow: auto;
+    padding-top: 10px;
+  }
+  .noresultpanel {
+    width: 100%;
+    height: 150px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .items {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 5px 0px 5px 0px;
+    font-size: 12px;
+    flex-direction: row;
+    cursor: pointer;
+    transition: all 0.5s linear;
+    animation-name: jumpBoxHandler;
+    animation-duration: 0.3s;
+    color: var(--primaryFontColor);
+  }
+  .items:hover {
+    background: #aacdec;
+    box-shadow: 1px 1px 1px rgba(192, 190, 190, 0.7);
+  }
+  .IconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12%;
+    margin-right: 5px;
+    padding-bottom: 2px;
+  }
+  .Icon {
+    width: 30px;
+    height: 38px;
+    margin-left: 5px;
+    background: #cecdcd;
+    background-position: center;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .index {
+    padding-bottom: 35%;
+  }
+  // .orders {
+  //   width: 30px;
+  //   height: 30px;
+  //   margin-left: 5px;
+  //   background: #cecdcd;
+  //   color: white;
+  //   text-align: center;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   background: url('/src/assets/icon/location.svg') no-repeat;
+  // }
+  .property {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 85%;
+  }
+  .topLine {
+    display: flex;
+  }
+  .names {
+    font-size: 14px;
+    width: 70%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .onlyNames {
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .addressFrom {
+    color: white;
+    font-size: 8px;
+    border-radius: 2px;
+  }
+  .address {
+    font-size: 12px;
+    color: var(--primaryFontColor);
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .pages {
+    padding-top: 5px;
+    width: 100%;
+    z-index: 15;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .el-pager li {
+    background-color: transparent;
+    color: var(--primaryFontColor);
+  }
+  .el-pagination .btn-next {
+    background-color: transparent;
+    color: var(--primaryFontColor);
+  }
+  .el-pagination .btn-prev {
+    background-color: transparent;
+    color: var(--primaryFontColor);
+  }
+  .allCount {
+    width: 100%;
+    font-size: 8px;
+    text-align: center;
+    margin-bottom: 5px;
+    color: black;
+  }
+  .allCount.dark {
+    color: #fff;
+  }
+  .nomore {
+    width: 100%;
+    text-align: center;
+    font-size: 8px;
+    color: #9a9a9a;
+    margin-top: 5px;
+  }
+  .showMore {
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    font-size: 8px;
+    background: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+  &#marker {
+    text-decoration: none;
+    color: white;
+    font-size: 10pt;
+    font-weight: bold;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    text-align: center;
+  }
+  .posIcon {
+    background: url('../../../src/assets/icon/location.svg') no-repeat;
+  }
+  .popover-content {
+    min-width: 180px;
+  }
+  .jump {
+    animation: jumpBoxHandler 1s 10;
+  }
+  /* 整个滚动条 */
+  /* 宽高分别对应纵向滚动条和横向滚动条的宽度 */
+  ::-webkit-scrollbar {
+    width: 6px;
+    background: #a4a3a3;
+    border-radius: 10px;
+  }
+
+  @keyframes jumpBoxHandler {
+    /* css事件 */
+    0% {
+      transform: translate(90px, 200px);
+    }
+    20% {
+      transform: translate(70px, 160px); /* 可配置跳动方向 */
+    }
+    40% {
+      transform: translate(50px, 120px); /* 可配置跳动方向 */
+    }
+    60% {
+      transform: translate(30px, 80px); /* 可配置跳动方向 */
+    }
+    80% {
+      transform: translate(20px, 40px); /* 可配置跳动方向 */
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+}

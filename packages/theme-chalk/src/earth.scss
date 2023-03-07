@@ -1,0 +1,104 @@
+@import 'mixins/mixins';
+@import 'common/var';
+@import 'general-card';
+@import 'general-bar';
+@import 'general-button';
+@import 'icon-svg';
+@import 'full-figure';
+@import 'full-screen';
+
+@include b(earth) {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .sh-earth-controls {
+    position: absolute;
+    right: 34px;
+    bottom: 125px;
+    z-index: 1;
+  }
+}
+
+@include b(earth-zoom) {
+  .zoom-in,
+  .zoom-out {
+    cursor: pointer;
+    margin: 2px 0;
+    width: 32px;
+    height: 32px;
+    line-height: 36px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: var(--title-background-color);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  }
+}
+
+@include b(earth-rotate) {
+  .compass {
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+  }
+}
+
+@include b(earth-scale-line) {
+  .distance-legend {
+    z-index: 1;
+  }
+}
+
+@include b(earth-navigation-help) {
+  margin: 2px 0;
+  .cesium-navigation-help-button {
+    cursor: pointer;
+    margin: 0;
+    width: 32px;
+    height: 32px;
+    line-height: 36px;
+    border: none;
+    border-radius: 50% !important;
+    text-align: center;
+    background-color: var(--title-background-color);
+    box-shadow: none;
+  }
+  .cesium-button:hover {
+    border-width: 0;
+    box-shadow: none;
+  }
+  .cesium-button:focus {
+    border: none;
+  }
+  .cesium-navigation-button-selected {
+    background-color: var(--title-background-color);
+  }
+  .cesium-navigation-help-instructions {
+    background-color: var(--panel-background-color);
+  }
+}
+
+@include b(earth-scene-pick) {
+  width: 32px;
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    width: 108px;
+    height: 32px;
+    direction: rtl;
+    transform: translateX(-74px);
+  }
+  .button {
+    margin: 0 2px 0 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    line-height: 36px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: var(--title-background-color);
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 30%);
+  }
+}

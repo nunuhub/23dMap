@@ -1,0 +1,98 @@
+@import 'mixins/mixins';
+@import 'common/var';
+
+@include b(general-card) {
+  font-size: 16px;
+  pointer-events: none;
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: lightgray;
+    border-radius: 3px;
+  }
+  .move_btn {
+    display: inline-block;
+    cursor: default;
+  }
+  .card {
+    position: relative;
+    transform-origin: 0 0;
+    pointer-events: all;
+  }
+  .move_header {
+    display: flex;
+    width: auto;
+
+    &.dragEnable {
+      cursor: move;
+    }
+
+    &.fix {
+      cursor: auto;
+    }
+  }
+  .head-title {
+    margin-left: 8px;
+    flex: 1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .head-btnBar {
+    margin-left: auto;
+    z-index: 2;
+  }
+
+  .el-button {
+    border: 0;
+  }
+
+  .general-content {
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .panel-fade-enter-active,
+  .panel-fade-leave-active {
+    transition: all 0.4s ease;
+  }
+
+  .panel-fade-enter,
+  .panel-fade-leave-active {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  .corner {
+    position: absolute;
+    background-color: transparent;
+  }
+  .corner-left-top {
+    left: -1px;
+    top: -1px;
+    border-right: transparent !important;
+    border-bottom: transparent !important;
+  }
+  .corner-right-top {
+    right: -1px;
+    top: -1px;
+    border-left: transparent !important;
+    border-bottom: transparent !important;
+  }
+  .corner-right-bottom {
+    right: -1px;
+    bottom: -1px;
+    border-left: transparent !important;
+    border-top: transparent !important;
+  }
+  .corner-left-bottom {
+    left: -1px;
+    bottom: -1px;
+    border-right: transparent !important;
+    border-top: transparent !important;
+  }
+}

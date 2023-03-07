@@ -1,0 +1,45 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "loose": false,
+        "modules": false,
+        "spec": true,
+        "exclude": ["proposal-dynamic-import"]
+      }
+    ],
+    "@vue/babel-preset-jsx"
+  ],
+  "plugins": [["@babel/plugin-transform-runtime", { "corejs": 3 }]],
+  "env": {
+    "utils": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "loose": false,
+            "modules": "commonjs",
+            "spec": true,
+            "exclude": ["proposal-dynamic-import"]
+          }
+        ]
+      ],
+      "plugins": [
+        ["@babel/plugin-transform-runtime", { "corejs": 3 }],
+        [
+          "module-resolver",
+          {
+            "root": ["shinegis-client-23d"],
+            "alias": {
+              "shinegis-client-23d/src": "shinegis-client-23d/lib"
+            }
+          }
+        ]
+      ]
+    },
+    "test": {
+      "plugins": ["istanbul"]
+    }
+  }
+}

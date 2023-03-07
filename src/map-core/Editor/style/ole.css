@@ -1,0 +1,71 @@
+#ole-toolbar {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+/*background: #fafafa;*/
+#ole-toolbar button.ole-control {
+  background: #3385ff;
+  border: 0;
+  color: #999;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 23px;
+  height: 32px;
+  padding: 0 8px;
+  transition: all 0.3s ease-out;
+}
+
+#ole-toolbar button.ole-control:hover {
+  color: #5c5c5c;
+}
+
+#ole-toolbar button.ole-control:focus {
+  outline: 0;
+}
+
+#ole-toolbar button.ole-control.active {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+  color: #5c5c5c;
+  filter: brightness(90%);
+}
+
+/* buttons */
+#ole-toolbar button.ole-control {
+  padding: 5px;
+}
+
+#ole-toolbar button.ole-control img {
+  height: 24px;
+}
+
+/* dialog */
+.ole-dialog {
+  background: #3385ff;
+  border-radius: 4px;
+  right: 45px;
+  padding: 8px;
+  position: absolute;
+  text-align: left;
+  top: 60px;
+  width: 300px;
+  z-index: 2;
+}
+
+/* font */
+#ole-toolbar,
+.ole-dialog {
+  font-family: Arial;
+  font-size: 14px;
+}
+
+/* shadow */
+#ole-toolbar button.ole-control,
+.ole-dialog {
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+#width-input {
+  width: 50px;
+}

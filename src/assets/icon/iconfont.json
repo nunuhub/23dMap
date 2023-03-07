@@ -1,0 +1,37 @@
+{
+  "id": "1386336",
+  "name": "shinemap",
+  "font_family": "iconfont",
+  "css_prefix_text": "el-icon-aliicon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3832612",
+      "name": "图层",
+      "font_class": "wfs",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "5624183",
+      "name": "图层",
+      "font_class": "wms",
+      "unicode": "e739",
+      "unicode_decimal": 59193
+    },
+    {
+      "icon_id": "6736839",
+      "name": "地图",
+      "font_class": "map",
+      "unicode": "e680",
+      "unicode_decimal": 59008
+    },
+    {
+      "icon_id": "7909281",
+      "name": "物联网",
+      "font_class": "iot",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    }
+  ]
+}

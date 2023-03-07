@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="icon/map/dark/select/我的标记" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon" transform="translate(0.000000, 1.000000)">
+            <path d="M14,0.5 L14.5,6.58578644 L7.35355339,13.9393398 L1.06066017,8.35355339 L8.06066017,0.646446609 L14,0.5 Z" id="color_w" stroke="#FFFFFF"></path>
+            <circle id="color_g" fill="#00FFFF" cx="10.5" cy="4.5" r="1.5"></circle>
+        </g>
+    </g>
+</svg>

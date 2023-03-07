@@ -1,0 +1,199 @@
+@import 'mixins/mixins';
+@import 'common/var';
+
+@include b(roller-blind) {
+  z-index: 200;
+  .blindStyle {
+    padding: 0 10px 10px;
+    border-bottom: 2px solid #c0c4cc;
+  }
+  .titleStyle,
+  .blindStyleSpan {
+    color: var(--primaryFontColor);
+    font-size: calc(var(--primaryFontSize) + 2px);
+  }
+  .el-radio__label,
+  .el-checkbox__label {
+    font-size: var(--primaryFontSize);
+    color: var(--primaryFontColor);
+  }
+  .blindStyleSpan {
+    padding-bottom: 10px;
+    padding-right: 7px;
+  }
+  .el-radio {
+    margin-right: 8px;
+  }
+  .bottomHalf {
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.35s;
+    padding: 0 10px;
+  }
+  .el-radio__label {
+    padding-left: 2px;
+  }
+  .el-input__inner {
+    padding: 0 5px;
+    width: 60px;
+  }
+  .el-input--mini .el-input__icon {
+    line-height: 18px;
+  }
+  .el-input--mini .el-input__inner {
+    height: 18px;
+    line-height: 18px;
+  }
+  .el-input--suffix .el-input__inner {
+    padding-right: 0px;
+  }
+  .content {
+    width: 100%;
+    min-height: 50px;
+    max-height: 145px;
+    padding: 10px;
+    border-radius: 4px;
+    overflow: auto;
+  }
+  .showIcon {
+    margin-left: 190px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .jl_l {
+    width: 100%;
+    line-height: 30px;
+  }
+  .jl_layer {
+    width: 100%;
+  }
+  .elRadio {
+    align-self: center;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .jl_r {
+    width: 130px;
+    position: relative;
+    align-self: center;
+  }
+
+  .jl_tc {
+    width: 80px;
+    line-height: 28px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .jl_tc span {
+    display: inline-block;
+    width: 64px;
+    background: #f0884a;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    align-self: center;
+  }
+
+  .jl_r .jl_selected {
+    display: flex;
+    border: 1px solid #858e98;
+    padding: 2px 10px;
+    border-radius: 5px;
+    //background: #676e74;
+    // color: #C0C4CC;
+  }
+
+  .jl_r .jl_selected .jl_lable {
+    display: inline-block;
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .jl_r .jl_selected .jl_icon {
+    display: inline-block;
+  }
+
+  .jl_r .jl_more {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 130px;
+    //background: rgb(85, 94, 103);
+    padding: 0;
+    // box-shadow: 0px 2px 10px 0px #082e52;
+    border-radius: 5px;
+    border: 1px solid #454c5e;
+    z-index: 10000;
+  }
+
+  .jl_r .jl_more li {
+    list-style: none;
+    line-height: 30px;
+    width: 130px;
+    display: flex;
+    padding: 2px 5px;
+  }
+
+  .jl_r .jl_more li:hover {
+    background: #5288f5;
+    border-radius: 4px;
+    width: 100%;
+  }
+
+  .jl_r .jl_more li span:first-child {
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .jl_r .jl_more li span:nth-child(2) {
+    width: 13%;
+    cursor: pointer;
+    display: none;
+  }
+
+  .jl_r .jl_more li:hover span:nth-child(2) {
+    display: block;
+  }
+
+  .jl_item {
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  .jl_item .jl_name {
+    width: 100px;
+    height: 30px;
+  }
+
+  .jl_item .jl_close {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 16px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .jl_item .jl_close:hover {
+    color: #f00;
+  }
+  .jlDirect {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  .circleR {
+    width: 100px;
+    margin-left: 20px;
+  }
+}

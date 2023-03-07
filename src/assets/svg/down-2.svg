@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2-1" transform="translate(-1192.000000, -375.000000)">
+            <g id="专题地图" transform="translate(1182.000000, 177.000000)">
+                <g id="编组-&lt;v1&gt;" transform="translate(0.000000, 31.000000)">
+                    <g id="cont备份" transform="translate(0.000000, 157.000000)">
+                        <g id="group&lt;h3&gt;" transform="translate(10.000000, 5.000000)">
+                            <g id="arrowDown" transform="translate(5.000000, 10.000000) rotate(-90.000000) translate(-5.000000, -10.000000) translate(0.000000, 5.000000)">
+                                <rect id="矩形" fill="#000000" fill-rule="nonzero" opacity="0" x="0" y="0" width="10" height="10"></rect>
+                                <path d="M1.20322266,2.60126953 L4.77734375,6.53271484 C4.88730469,6.67021484 5.10722656,6.67021484 5.2171875,6.53271484 L8.79130859,2.60117188 C8.84628906,2.51865234 8.95625,2.49121094 9.03876953,2.49121094 C9.34121094,2.49121094 9.47861328,2.84863281 9.28623047,3.06855469 L5.43720703,7.30253906 C5.18974609,7.57744141 4.77734375,7.57744141 4.55742187,7.30253906 L0.708398437,3.06865234 C0.515917969,2.84873047 0.680859375,2.49130859 0.955859375,2.49130859 C1.06582031,2.49130859 1.14824219,2.51875 1.20322266,2.60126953 Z" id="路径" fill="#C0C4CC"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

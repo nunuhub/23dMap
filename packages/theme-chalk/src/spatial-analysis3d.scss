@@ -1,0 +1,572 @@
+@import 'mixins/mixins';
+@import 'common/var';
+
+@include b(spatial-analysis3d) {
+  .closeIco {
+    background: url('../../../src/assets/img/spatial-analysis3d/close-1.svg')
+      0px 0px no-repeat;
+    position: absolute;
+    right: 6px;
+    width: 20px;
+    height: 20px;
+  }
+  .arrow {
+    background: url('../../../src/assets/img/spatial-analysis3d/arrow.png') 0px
+      0px no-repeat;
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    width: 20px;
+    height: 20px;
+  }
+  #charts_sa {
+    position: absolute;
+    width: calc(93% - 10px);
+    height: 197px;
+    left: 10px;
+    bottom: 10px;
+
+    .echartsView-closeBotton {
+      cursor: pointer;
+      background-color: #fff;
+      background-image: url('../../../src/assets/img/spatial-analysis3d/close-2.svg');
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform: translateY(-50%) translateX(50%);
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+  }
+
+  label.formName {
+    position: relative;
+    left: 25px;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  #jieqiTable {
+    text-align: center;
+    background-color: #80808099;
+    position: absolute;
+    top: 110px;
+    left: 280px;
+    width: 275px;
+    height: 123px;
+    line-height: normal;
+  }
+
+  .jieqiLabel {
+    white-space: nowrap;
+    color: white;
+    display: inline-block;
+    width: 30px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  #echartsView_sa {
+    position: relative;
+    width: 100%;
+    height: 197px;
+    left: 0;
+    bottom: 0;
+  }
+
+  .spatialAnaContainer {
+    border-top: 0;
+    width: 100%;
+    position: relative;
+  }
+}
+
+@include b(page-formsa) {
+  label {
+    display: initial;
+    margin-bottom: inherit;
+  }
+
+  .Collapse {
+    height: 30px;
+    line-height: 30px;
+    background: #2a2d30e6;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px 4px 0 0;
+    display: flex;
+    align-content: center;
+    position: relative;
+  }
+  .Collapse i {
+    line-height: 30px;
+    margin: 0 3px 0 10px;
+  }
+  .Collapse .TEM {
+    height: 30px;
+    background: #555e67;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 32px;
+  }
+
+  .el-input.is-disabled .el-input__inner {
+    background-color: #676e74;
+    border: 1px solid #858e98;
+  }
+  .el-form-item {
+    margin-bottom: 0;
+    height: 34px;
+  }
+  .el-form-item .el-form-item__label {
+    text-align: left;
+    color: #fff;
+    height: 100%;
+    padding: 0 0 0 10px;
+    margin-bottom: 0;
+    /* padding-top: 10px; */
+    line-height: 32px;
+    font-size: 12px;
+  }
+  .el-form-item .el-form-item__content {
+    height: 100%;
+    padding: 0 10px;
+    border-left: 1px solid #2b2f32;
+  }
+  .nopadding .el-form-item__content {
+    /*  padding: 10px;
+  height: 100%; */
+    padding: 0 10px 0 0;
+    /*  border-left: 1px solid #2b2f32; */
+  }
+  .el-form-item .el-color-picker__trigger {
+    /**颜色选择器也改小点 */
+    height: 24px;
+    width: 40px;
+    padding: 2px;
+    top: 5px;
+  }
+  .el-form-item__content .el-input-number {
+    width: 100%;
+    height: 75%;
+  }
+  .nopadding .el-form-item__content .el-input-number {
+    width: 112%;
+    height: 75%;
+  }
+  .nopadding_jieqi .el-form-item__content .el-input-number {
+    width: 145%;
+    height: 75%;
+  }
+  .el-form-item__content .el-input-number .el-input-number__increase,
+  .el-form-item__content .el-input-number .el-input-number__decrease {
+    background: #4d565d;
+    color: #fff;
+    border-radius: 24px 24px 0px 0px;
+    border: 1px solid #858e98;
+    height: 12px;
+    width: 24px;
+    top: 2.4px;
+    right: 0px;
+    transform: translateY(0.5px);
+  }
+
+  .nopadding .el-form-item__content .el-input-number .el-input-number__increase,
+  .nopadding
+    .el-form-item__content
+    .el-input-number
+    .el-input-number__decrease {
+    right: 0;
+  }
+
+  .slope_slider
+    .el-form-item__content
+    .el-input-number
+    .el-input-number__increase,
+  .slope_slider
+    .el-form-item__content
+    .el-input-number
+    .el-input-number__decrease {
+    right: -24px !important;
+  }
+
+  .el-form-item__content .el-input-number .el-input-number__decrease {
+    border-radius: 0px 0px 24px 24px;
+    top: auto;
+    bottom: -0.5px;
+  }
+
+  .el-form-item__content
+    .el-input-number
+    .el-input-number__increase
+    .el-icon-arrow-up,
+  .el-form-item__content
+    .el-input-number
+    .el-input-number__decrease
+    .el-icon-arrow-down {
+    position: relative;
+    vertical-align: super;
+    transform: translateY(-1px);
+  }
+  .el-checkbox,
+  .el-radio__label {
+    color: #fff;
+  }
+
+  .nopadding .el-input__inner {
+    padding: 0 10px;
+    padding-right: 0 !important;
+    width: 100%;
+    /* 原先是43，改成46  text-align: center; */
+  }
+  .nopadding.terrainRow .el-input__inner {
+    padding-left: 10px;
+  }
+
+  .nopadding.el-input-number.is-controls-right .el-input__inner {
+    padding-left: 10px; // 为swg项目而加
+    padding-right: 0px;
+  }
+
+  .nopadding.is-controls-right .el-input__inner {
+    width: 54px;
+  }
+  .colorInput {
+    width: 60%;
+    margin-right: 10px;
+  }
+  .nopadding .colorInput .el-input__inner {
+    padding-left: 10px;
+    width: 72px;
+  }
+
+  .el-form-item__content .el-slider {
+    height: 32px;
+  }
+  .el-form-item__content.slider {
+    height: 100%;
+  }
+  .el-form-item__content .el-slider .el-slider__runway {
+    margin-top: 13px;
+    margin-bottom: 13px;
+  }
+  .el-form-item__content .el-switch {
+    vertical-align: baseline;
+  }
+
+  .slider .el-input__suffix-inner {
+    height: 32px;
+    position: absolute;
+    left: -11px;
+    top: -3px;
+  }
+  .el-input--suffix .el-input__inner {
+    padding-right: 15px;
+    min-width: 45px;
+  }
+
+  .divContent {
+    display: flex;
+  }
+  .el-input,
+  .el-select,
+  .el-textarea {
+    height: 100%;
+  }
+  .el-select .el-input__suffix {
+    top: -3px;
+  }
+  .el-select {
+    width: 100%;
+  }
+  .el-input__inner,
+  .el-textarea__inner {
+    background: #676e74;
+    border-radius: 16px;
+    border: 1px solid #858e98;
+    color: #fff;
+    height: 24px;
+    vertical-align: 5px;
+    font-size: 12px;
+  }
+  .el-textarea__inner {
+    border-radius: 4px;
+  }
+  .slider .el-input__inner {
+    padding: 0;
+  }
+
+  .el-form-block {
+    display: block;
+    width: 100%;
+  }
+
+  .el-form-block .el-form-item__content .el-textarea {
+    width: 100%;
+  }
+  .el-date-editor--datetime {
+    width: 100% !important;
+  }
+  .el-date-editor--datetime .el-input__inner {
+    padding: 0 0 0 30px;
+    width: 100%;
+  }
+  .el-input-number .el-input__inner {
+    text-align: left;
+  }
+  .el-icon-time:before {
+    display: block;
+    position: absolute;
+    top: -3px;
+  }
+  .el-input__icon::before {
+    display: block;
+    position: absolute;
+    top: -3px;
+  }
+  .el-date-editor--datetime .el-icon-circle-close::before {
+    display: block;
+    position: absolute;
+    top: -3px;
+    right: 3px;
+  }
+  .el-date-editor .el-input__inner {
+    text-align: left;
+  }
+  .nopadding input {
+    padding: 0 0 0 0;
+  }
+  .position_modify .el-input__inner {
+    width: 55px;
+  }
+  .position_modify .el-input-number__increase,
+  .position_modify .el-input-number__decrease {
+    right: -4px !important;
+  }
+  .btn_solarTerm {
+    height: 24px;
+    line-height: initial;
+    transform: translateY(-3px);
+    font-size: 12px;
+    color: white;
+    background-color: gray;
+  }
+  .solarTermBtn .el-form-item__content {
+    width: 80%;
+    margin-left: 20px !important;
+  }
+  .transfrom115 {
+    transform: translateX(-115px);
+  }
+
+  .el-form-item__content {
+    /*空间分析的组件，看蓝湖上的样式要求，都没有中间的线条*/
+    border: 0 !important;
+  }
+  /* .terrainRow .el-form-item__content {
+  border: 0 !important;
+} */
+  .terrainRow .btnSpan {
+    right: -15px;
+  }
+  .changeColor .el-color-picker {
+    right: -64px !important;
+    z-index: 999;
+  }
+  .changeColor .el-form-item__label {
+    width: 68px !important;
+  }
+  .changeColor .el-form-item__content {
+    margin-left: 0 !important;
+  }
+  .btn {
+    width: 24px;
+    height: 24px;
+    background: #1e232c;
+    border-radius: 16px;
+    border: 1px solid #467cf3;
+    background-repeat: no-repeat;
+    background-position-x: 7px;
+    background-position-y: 7px;
+    margin-right: 10px;
+    vertical-align: baseline;
+  }
+
+  .btn:hover {
+    background-color: #467cf3;
+  }
+  .btn:active {
+    background-color: #4566b4;
+  }
+
+  .btn1 {
+    background-image: url(../../../src/assets/img/spatial-analysis3d/start.svg);
+    background-position-x: 9.5px;
+  }
+  .btn2 {
+    background-image: url(../../../src/assets/img/spatial-analysis3d/stop.svg);
+  }
+  .btn3 {
+    background-image: url(../../../src/assets/img/spatial-analysis3d/sa-pause.svg);
+    background-position-x: 9.5px;
+  }
+  .twoRow {
+    height: 40px;
+    text-align: center;
+  }
+  .threeRow {
+    height: 80px;
+  }
+  .threeRow .el-form-item__content {
+    margin-left: 0px !important;
+    padding: 0px;
+    border: 0px;
+  }
+  .btnSpan {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    vertical-align: sub;
+  }
+  .btnRow {
+    height: 24px;
+    color: #fff;
+    font-size: 12px;
+    background: #1e232c;
+    border: 1px solid #467cf3;
+    border-radius: 16px;
+    margin-right: 10px;
+    vertical-align: super;
+    padding: 7px 10px;
+  }
+  .btnRow:hover {
+    background-color: #467cf3;
+  }
+  .btnRow:active {
+    background-color: #4566b4;
+  }
+
+  .heightAuto {
+    height: auto;
+  }
+  .heightAuto .el-form-item__content {
+    margin-left: 0 !important;
+    /*   margin: 10px; */
+  }
+  .heightAuto .clipContainer {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+
+  .listRow {
+    color: white;
+    background: #161616;
+    margin: 10px 0;
+    height: 32px;
+    line-height: 32px;
+    text-align: left;
+    padding: 0 10px;
+    white-space: nowrap;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+  }
+  .listRow:hover {
+    border: 1px solid #25a2e0;
+  }
+  .name {
+    top: -2px;
+    position: relative;
+    display: inline-block;
+  }
+  .delete {
+    float: right;
+    top: 6px;
+    position: relative;
+    /* display: inline-block; */
+  }
+  .info {
+    padding-left: 10px;
+    top: -3px;
+    position: relative;
+    display: inline-block;
+  }
+  .el-form-item__content {
+    font-size: 12px;
+  }
+  .layui-layer-tips .layui-layer-content {
+    position: relative;
+    line-height: 22px;
+    min-width: 12px;
+    padding: 8px 15px;
+    font-size: 12px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 3px rgb(0 0 0 / 20%);
+    background-color: #000;
+    color: #fff;
+  }
+  .clip-info-close {
+    background-image: url(../../../src/assets/img/spatial-analysis3d/close-1.svg);
+    -webkit-background-size: 18px 18px;
+    background-size: 18px;
+    width: 16px;
+    height: 16px;
+    float: right;
+  }
+  .delete,
+  .info,
+  .clip-info-close:hover {
+    cursor: pointer;
+  }
+
+  .el-input input {
+    background-color: #676e74e6 !important;
+  }
+  .el-input input {
+    background-color: #676e74e6 !important;
+  }
+  .unit_Meters {
+    display: block;
+    position: relative;
+    pointer-events: none;
+    right: 9px;
+    top: -45px;
+    color: white;
+    padding-left: 76px;
+  }
+  .aspect .el-select__tags {
+    display: inline-flex;
+    width: 120px !important;
+    max-width: 120px !important;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    top: 2px;
+    transform: scaleY(0.85);
+  }
+  .el-checkbox-group {
+    transform: translateY(-4px);
+  }
+  .el-checkbox__label {
+    font-size: 12px;
+  }
+  .flood {
+    transform: translateX(10px);
+  }
+  .selected {
+    background-color: gray;
+  }
+  .heightAuto1 {
+    height: auto;
+  }
+  .terrain_add {
+    background-color: #409eff;
+    color: white;
+    border-radius: 22px;
+    transform: scale(0.8);
+    border: 1px solid #dcdfe6;
+  }
+}

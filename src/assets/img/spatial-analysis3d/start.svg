@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>切片</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.458403 0 0 0 0 0.740034 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="table" transform="translate(-772.000000, -61.000000)">
+            <g id="icon/tools/start1" transform="translate(764.000000, 54.000000)" filter="url(#filter-1)">
+                <g transform="translate(8.000000, 7.000000)" id="路径-2" fill="#C0C4CC">
+                    <path d="M7.26367666,3.84653335 C7.26367666,3.84653335 0.861224659,0.0261600683 0.801701573,0.0154177099 C0.20461061,-0.0910292962 0.0344117844,0.372845272 0.0158108199,0.818164857 L0,0.831836949 C0,0.831836949 0.0381319774,8.26945528 0.0595230866,8.32902654 C0.235302202,8.8290345 0.751478968,8.8290345 1.11977807,8.6112576 L1.12907855,8.61516391 C1.12907855,8.61516391 7.06650644,4.9871765 7.11486895,4.94616022 C7.4301553,4.67271837 7.71940029,4.27329795 7.26367666,3.84653335 Z" id="路径"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

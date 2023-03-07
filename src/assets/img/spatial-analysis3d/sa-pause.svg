@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>切片</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.239216 0 0 0 0 0.835294 0 0 0 0 0.635294 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="table" transform="translate(-805.000000, -61.000000)">
+            <g id="btnGroup&lt;h10&gt;" transform="translate(764.000000, 54.000000)">
+                <g id="icon/tools/start1" transform="translate(34.000000, 0.000000)" filter="url(#filter-1)">
+                    <g transform="translate(7.000000, 7.000000)" id="编组" fill="#C0C4CC">
+                        <path d="M0.703125,0 C0.284520349,0 0.00545058412,0.291666664 0.00545058412,0.729166664 L0.00545058412,8.02083334 C0.00545058412,8.45833334 0.284520349,8.75 0.703125,8.75 C1.12172965,8.75 1.40079942,8.45833334 1.40079942,8.02083334 L1.40079942,0.729166664 C1.40079942,0.291666664 1.12172965,0 0.703125,0 Z M4.26417151,0 C3.84556686,0 3.5664971,0.291666664 3.5664971,0.729166664 L3.5664971,8.02083334 C3.5664971,8.45833334 3.84556686,8.75 4.26417151,8.75 C4.68277616,8.75 4.96184593,8.45833334 4.96184593,8.02083334 L4.96184593,0.729166664 C4.96184593,0.291666664 4.68277616,0 4.26417151,0 Z" id="形状"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

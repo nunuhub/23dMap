@@ -1,0 +1,31 @@
+{
+  "zh-CN": [
+    {
+      "name": "使用指南",
+      "children": [
+        {
+          "path": "/installation",
+          "name": "简介"
+        }
+      ]
+    },
+    {
+      "name": "服务接口",
+      "groups": [
+        {
+          "groupName": "基础服务",
+          "list": [
+            {
+              "path": "/intersect",
+              "title": "叠加分析"
+            },
+            {
+              "path": "/track",
+              "title": "追溯分析服务"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

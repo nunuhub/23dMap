@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>绘制</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="绘制" transform="translate(1.000000, 0.000000)">
+            <polygon id="路径-8" stroke="#ED9105" fill="#FF9200" points="0 16 6 14 16 4 12 0 2 10"></polygon>
+            <line x1="2" y1="10" x2="6" y2="14" id="路径-9" stroke="#FFFFFF"></line>
+            <line x1="10" y1="2" x2="14" y2="6" id="路径-10" stroke="#FFFFFF"></line>
+        </g>
+    </g>
+</svg>

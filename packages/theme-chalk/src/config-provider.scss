@@ -1,0 +1,12 @@
+@import "mixins/mixins";
+@import "common/var";
+
+@include b(config-provider) {
+  height: 100%;
+  width: 100%;
+
+  .loading {
+    height: 100%;
+    width: 100%;
+  }
+}

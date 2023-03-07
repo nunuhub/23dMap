@@ -1,0 +1,110 @@
+@import 'mixins/mixins';
+@import 'common/var';
+
+@include b(union-tool) {
+  .textTip {
+    padding: 20px;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+  }
+
+  .diaBody {
+    /* padding: 20px; */
+    overflow-y: hidden;
+  }
+
+  .left {
+    position: relative;
+    float: left;
+    width: 100px;
+    padding-right: 5px;
+    box-sizing: border-box;
+  }
+
+  .left div {
+    padding-left: 8px;
+  }
+
+  .right {
+    position: relative;
+    float: left;
+    width: calc(100% - 100px);
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    min-width: 220px;
+  }
+
+  .nameDiv {
+    width: 30%;
+    min-height: 24px;
+    position: relative;
+    float: left;
+    padding: 0 5px;
+    box-sizing: border-box;
+    min-width: 80px;
+    border-right: 1px solid #ccc;
+    word-wrap: break-word;
+  }
+
+  .valueDiv {
+    width: 70%;
+    min-height: 24px;
+    word-wrap: break-word;
+    position: relative;
+    float: left;
+    border-left: 1px solid #ccc;
+    padding: 0 5px;
+    box-sizing: border-box;
+    min-width: 120px;
+  }
+
+  .blockDiv {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  .tableHeader {
+    background: #e7e2e2;
+  }
+
+  .left .tableHeader {
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    min-height: 27px;
+  }
+
+  .tableBody {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+
+  .tableBody::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+    background-color: #409eff;
+    border-radius: 15px;
+  }
+
+  .DK_btn {
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  .btns {
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .select-label {
+    font-size: var(--primaryFontSize);
+    color: var(--primaryFontColor);
+  }
+}

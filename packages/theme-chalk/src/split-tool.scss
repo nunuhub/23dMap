@@ -1,0 +1,57 @@
+@import 'mixins/mixins';
+@import 'common/var';
+
+@include b(split-tool) {
+  .diaBody {
+    /* padding: 20px; */
+    overflow-y: auto;
+  }
+
+  .diaBody::-webkit-scrollbar {
+    display: none;
+  }
+
+  .lineDiv {
+    height: 2px;
+    float: left;
+    width: 100px;
+    margin: 10px;
+  }
+
+  .lineName {
+    float: left;
+    position: relative;
+  }
+
+  .lineListDiv {
+    padding: 5px 15px;
+  }
+
+  .delBtn {
+    right: 15px;
+    position: absolute;
+    color: red;
+    cursor: pointer;
+  }
+
+  .lineItem {
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    width: 100%;
+  }
+
+  .split-label {
+    font-size: var(--primaryFontSize);
+    color: var(--primaryFontColor);
+  }
+  .btns {
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}

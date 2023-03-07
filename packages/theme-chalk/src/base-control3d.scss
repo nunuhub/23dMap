@@ -1,0 +1,414 @@
+@import 'mixins/mixins';
+@import 'common/var';
+
+.cesium-navigation-help {
+  top: auto !important;
+  bottom: 0 !important;
+  right: 40px !important;
+  transform-origin: right bottom !important;
+}
+@include b(base-control-3d) {
+  .sh-general-card .general-content {
+    overflow: inherit !important;
+  }
+  .minor {
+    position: absolute;
+    width: 32px;
+    /* right: 20px;
+    bottom: 450px; */
+  }
+  .ul_minor {
+    list-style: none;
+    line-height: 33px; //在shinegis-client-23d里改成36合适，原先是27px
+    padding: 0;
+  }
+  .li_minor {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 2px 0 2px 0;
+  }
+  .li_minor:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 8px #fff;
+  }
+  .icon_container {
+    line-height: 38px;
+  }
+  .helper_button {
+    position: absolute !important;
+    right: 20px !important;
+    bottom: 450px !important;
+    background-color: rgb(96, 110, 118);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 2px 0 2px 0;
+  }
+  .secondList {
+    width: 70px;
+    position: relative;
+    right: 70px;
+    top: -34px;
+    height: 32px;
+  }
+  .secondDiv {
+    cursor: pointer;
+    float: left;
+    background-color: rgb(96, 110, 118);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 3px 0 0;
+  }
+  .fullScreen {
+    z-index: 14;
+    position: relative;
+  }
+  .light {
+    background-color: #ffffff;
+  }
+  .dark {
+    background-color: #606e76;
+  }
+}
+
+@include b(page-formbc) {
+  .Collapse {
+    height: 30px;
+    line-height: 28px;
+    font-size: 12px;
+    background: rgba(85, 94, 103, 0.3);
+    cursor: pointer;
+    border-top: solid 1px #101215;
+    border-bottom: solid 1px #101215;
+    /*  border-radius: 4px 4px 0 0; */
+    display: flex;
+    align-content: center;
+    position: relative;
+  }
+  .Collapse i {
+    line-height: 30px;
+    margin: 0 3px 0 10px;
+  }
+  .Collapse .TEM {
+    height: 30px;
+    background: #555e67;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 32px;
+  }
+  .el-input.is-disabled .el-input__inner {
+    background-color: #676e74;
+    border: 1px solid #858e98;
+  }
+  /* 该组件的高度是35px。 标绘测量等组件是34. */
+  .el-form-item {
+    margin-bottom: 0;
+    height: 35px;
+    border-top: 1px solid #2b2f32;
+    border-bottom: 1px solid #2b2f32;
+    background-color: #2a2d3066;
+  }
+  .el-form-item-big {
+    height: 52px;
+    background-color: #5d646b66;
+  }
+  .el-checkbox__input.is-checked + span.el-checkbox__label {
+    color: #fff;
+  }
+  .el-form-item-big .el-steps {
+    height: 100%;
+    transform: translateX(-13px);
+    width: 110%;
+  }
+  .el-form-item-big .el-steps .el-step {
+    height: 100%;
+  }
+  .el-form-item-big .el-step .el-step__line-inner {
+    border-style: none;
+  }
+  .el-form-item-big .el-steps .el-step .el-step__head {
+    height: 50%;
+  }
+
+  .el-form-item-big .el-steps .el-step .el-step__head .el-step__icon {
+    background: none;
+    transform: translateY(-1px); // 在swg项目中加上
+  }
+
+  .el-form-item-big .el-steps .el-step .el-step__head .el-step__line {
+    border-width: 4px;
+    height: 8px;
+    transform: translate(20px, 2px);
+  }
+  .el-form-item-big .el-steps .el-step .is-finish .el-step__line {
+    background-color: #409eff;
+  }
+  .el-form-item-big
+    .el-steps
+    .el-step
+    .is-process
+    .svgDiv
+    path:nth-last-child(1):first-child {
+    --fl1Color: #ababab;
+  }
+
+  .el-form-item-big .el-steps .el-step .el-step__head .el-step__line-inner {
+    border-width: 4px !important;
+  }
+  .el-form-item-big .el-steps.el-step .el-step__main {
+    height: 50%;
+  }
+  .el-step__title {
+    line-height: 25px;
+    font-size: 12px;
+    transform: translateX(7px);
+  }
+  .el-step__title.is-finish {
+    color: #fff;
+    font-weight: 400;
+  }
+  .el-step__title.is-process {
+    color: #409eff; //409eff
+    font-weight: 400;
+  }
+  .el-step__title.is-wait {
+    color: #fff;
+  }
+  .heightAuto {
+    height: auto;
+  }
+  .el-form-item .el-form-item__label {
+    color: #fff;
+    height: 100%;
+    padding: 0 10px;
+    margin-bottom: 0;
+    line-height: 32px;
+    font-size: 12px;
+  }
+  .el-form-item .el-form-item__content {
+    padding: 10px;
+    height: 100%;
+    padding: 0 10px;
+  }
+  .el-form-item .el-color-picker__trigger {
+    /**颜色选择器也改小点 */
+    height: 24px;
+    width: 40px;
+    padding: 2px;
+    top: 4px;
+  }
+  .el-form-item__content .el-input-number {
+    width: 100%;
+    height: 75%;
+  }
+  .el-form-item__content .el-input-number .el-input-number__increase,
+  .el-form-item__content .el-input-number .el-input-number__decrease {
+    background: #4d565d;
+    color: #fff;
+    border-radius: 24px 24px 0px 0px;
+    border: 1px solid #858e98;
+    height: 12px;
+    width: 24px;
+    top: 2.4px;
+    right: 0px;
+    transform: translateY(0.5px);
+  }
+
+  .el-form-item__content .el-input-number .el-input-number__decrease {
+    border-radius: 0px 0px 24px 24px;
+    top: auto;
+    bottom: -1.9px;
+  }
+
+  .el-form-item__content
+    .el-input-number
+    .el-input-number__increase
+    .el-icon-arrow-up,
+  .el-form-item__content
+    .el-input-number
+    .el-input-number__decrease
+    .el-icon-arrow-down {
+    position: relative;
+    vertical-align: super;
+    transform: translateY(-1px);
+  }
+  .el-checkbox,
+  .el-radio__label {
+    color: #fff;
+  }
+  .colorInput {
+    width: 60%;
+    margin-right: 10px;
+  }
+
+  .el-form-item__content .el-slider {
+    height: 32px;
+  }
+  .el-form-item__content.slider {
+    height: 100%;
+  }
+  .el-form-item__content .el-slider .el-slider__runway {
+    margin-top: 13px;
+    margin-bottom: 13px;
+  }
+  .el-form-item__content .el-switch {
+    vertical-align: baseline;
+  }
+
+  .slider .el-input__suffix-inner {
+    height: 32px;
+    position: absolute;
+    left: -18px;
+    top: -5px;
+  }
+  .el-form-item__content .el-slider__marks-text {
+    position: absolute;
+    transform: translateX(-12%);
+    font-size: 12px;
+    color: #fff;
+    width: 25px;
+    margin-top: 3px;
+  }
+  .el-form-item__content .el-slider__marks-text:last-child {
+    transform: translateX(-46%);
+  }
+
+  .divContent {
+    display: flex;
+  }
+  .el-input,
+  .el-select,
+  .el-textarea {
+    height: 100%;
+  }
+  .el-input__inner,
+  .el-textarea__inner {
+    background: #676e74;
+    border-radius: 16px;
+    border: 1px solid #858e98;
+    color: #fff;
+    height: 24px;
+    vertical-align: 5px;
+    font-size: 12px;
+  }
+  .el-textarea__inner {
+    border-radius: 4px;
+    margin: 5px 0;
+  }
+  .slider .el-input__inner {
+    padding: 0 10px;
+  }
+
+  .colorInput .el-input__inner {
+    text-align: center;
+  }
+
+  .el-form-block {
+    display: block;
+    width: 100%;
+  }
+  .nopadding input {
+    padding: 0 0 0 0;
+  }
+  .inMiddle input {
+    text-align: center;
+  }
+
+  .el-form-block .el-form-item__content .el-textarea {
+    width: 100%;
+  }
+
+  .btnSpan {
+    display: inline-block;
+    position: relative;
+    top: 1px;
+  }
+  .btnRow {
+    height: 24px;
+    color: #fff;
+    font-size: 12px;
+    background: #1e232c;
+    border: 1px solid #467cf3;
+    border-radius: 16px;
+    margin-right: 10px;
+    vertical-align: super;
+    padding: 7px 10px;
+  }
+  .btnRow:hover {
+    background-color: #467cf3;
+  }
+  .btnRow:active {
+    background-color: #4566b4;
+  }
+  .cursor_point {
+    cursor: pointer;
+  }
+  .icon_padding {
+    padding-left: 10px;
+    padding-right: 6px;
+    vertical-align: -webkit-baseline-middle; // 在swg中加上
+  }
+  .selected {
+    background: rgba(48, 45, 42, 0.6);
+    box-shadow: 0px 0px 3px 0px #2121;
+  }
+  .border_lr {
+    border-left: solid 1px #000;
+    border-right: solid 1px #000;
+  }
+  .border_lr:hover {
+    background: rgba(48, 45, 42, 0.6);
+    box-shadow: 0px 0px 3px 0px #2121;
+  }
+
+  .el-slider__button {
+    background-image: url('../../../src/assets/img/draw-tool3d/light.svg');
+    background-color: #0000;
+    border: none;
+  }
+  .keyborad-input {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    left: -14px;
+    top: 3px;
+    background: rgba(103, 110, 116, 0.9);
+    border: 1px solid #858e98;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+  .keyborad-input.inp {
+    left: -1px;
+    top: -7px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    background: #0000;
+  }
+  .warning {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    left: 25px;
+    top: -18px;
+  }
+  .warning:hover {
+    background-image: url('../../../src/assets/img/draw-tool3d/warning.svg');
+    background-repeat: no-repeat;
+  }
+  .padding_05010 .el-form-item__content {
+    padding: 0 5px 0 10px;
+  }
+  .padding_0505 .el-form-item__content {
+    padding: 0 5px;
+  }
+  .padding_0500 .el-form-item__content {
+    padding: 0 5px 0 0;
+  }
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)http://zbph.mnr.gov.cn/qaweb/qalink/basic/7.html#nav3.2 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>坐标标准格式和要求</title>
+    <link href="./common.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="view_area">
+        <center>
+            <h2>数据导入标准格式和要求</h2>
+        </center>
+        <hr>
+        <div style="padding: 0px 8px 0px 8px;">
+            <center style="color:red">注：系统里面只支持导入一个坐标文件，导入多次最终将以最后一次导入为准。</center>
+            <h4 id="nav1">1、数据导入：</h4>
+            <table class="table_list_01" cellpadding="0" cellspacing="0" width="800px">
+                <thead>
+                    <tr>
+                        <th>应用系统</th>
+                        <th style="width:300px">坐标类型</th>
+                       
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3">浙江省智慧“数字征迁”监管系统</td>
+                        <td>shp格式</td>
+                     
+                        
+                    </tr>
+                    <tr>
+                        <td>txt格式</td>
+                   
+                    </tr>
+                    <tr>
+                        <td>dwg格式</td>
+                       
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <h4 id="nav2">2、坐标基本要求</h4>
+            <table class="table_list_01" cellpadding="0" cellspacing="0" width="500px">
+                <thead>
+                    <tr>
+                        <th>名称</th>
+                        <th>要求</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>坐标系</td>
+                        <td>2000国家大地坐标系</td>
+                    </tr>
+                    <tr>
+                        <td>几度分带</td>
+                        <td>3分带</td>
+                    </tr>
+                    <tr>
+                        <td>坐标格式要求</td>
+                        <td>平面直角坐标</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h4>3、文件要求</h4>
+            <h5 id="nav4.1">3.1、shp文件要求</h5>
+            <table class="table_list_01" cellpadding="0" cellspacing="0" width="500px">
+                <thead>
+                    <tr>
+                        <th>文件类型</th>
+                        <th>是否必须</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>dbf</td>
+                        <td style="color: red">必须</td>
+                    </tr>
+                    <tr>
+                        <td>shp</td>
+                        <td style="color: red">必须</td>
+                    </tr>
+                    <tr>
+                        <td>prj</td>
+                        <td style="color: red">必须</td>
+                    </tr>
+                    <tr>
+                        <td>shx</td>
+                        <td style="color: red">必须</td>
+                    </tr>
+                    <tr>
+                        <td>sbn</td>
+                        <td style="color: red">必须</td>
+                    </tr>
+                    <tr>
+                        <td>sbx</td>
+                        <td style="color: red">必须</td>
+                    </tr>
+
+                    <tr>
+                        <td>xml</td>
+                        <td style="color: red">必须</td>
+                    </tr>
+                    <tr>
+                        <td>cpg</td>
+                        <td>可选</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h5 id="nav4.2">3.2、dwg文件要求</h5>
+             文件后缀名必须是“.dwg”，且只包含项目红线层，若包含地形，图框等其他要素则无法导入
+            <h5 id="nav4.3">3.3、txt文件要求</h5>
+            <table class="table_list_01" cellpadding="0" cellspacing="0" width="800px">
+                <tbody><tr>
+                    <th style="width: 500px">坐标形式图例</th>
+                    <th style="width: 100px;">是否导入</th>
+                    <th>备注</th>
+                </tr>
+                <tr>
+                    <td>
+                       <p>[属性描述]</p>
+                       <p>格式版本号=</p>
+                       <p>数据生产单位=</p>
+                       <p>数据生产日期=</p>
+                       <p>坐标系=2000国家大地坐标系</p>
+                       <p>几度分带=3</p>
+                       <p>投影类型=高斯克吕格</p>
+                       <p>计量单位=米</p>
+                       <p>带号=40</p>
+                       <p>精度=0.01</p>
+                       <p>转换参数=0，0，0，0，0，0，0</p>
+                       <p>[地块坐标]</p>
+                       <p>142,326.65,地块1,面,,,,@</p>
+                       <p>J1, 1, 3787369. 9850, 40407681. 9830</p>
+                       <p>J2,1, 3787351.
+                        2380, 40407681. 0360</p>
+                    </td>
+                    <td>是</td>
+                    <td>正常格式</td>
+                </tr>
+                
+            </tbody></table>
+
+            <h4 id="nav7">4、数据上传使用说明</h4>
+            <p>◆&nbsp;导入坐标按钮可以重复导入，最终坐标数据以最后一次导入为准；</p>
+            <p>◆&nbsp;本功能支持Shp、dwg等格式的坐标文件导入；</p>
+            <p>提示：添加压缩只针对Shp文件进行，不包括Shp文件所属的文件夹；</p>
+            <p>◆&nbsp;针对于IE 7及以下版本，将自动启用极简模式进行预览图形；</p>
+            <p>◆&nbsp;系统支持点、线、面等坐标图形预览；</p>
+            <h4 id="nav8">5、常见问题</h4>
+            <p style="color: red">问：为什么导入了多个坐标文件，但系统中只显示一个地块图形？</p>
+            <p style="color: blue">答：因为系统中默认只识别一个文件的坐标图形，之前导入的都会被自动覆盖。</p>
+            <p style="color: red">问：为什么导入的是四边形，但是在系统中显示的是三边形？</p>
+            <p style="color: blue">答：因为地块坐标点缺少闭合点，需要补录后再导入即可。具体判定情况请参考下图。</p>
+            <p>
+                <img src="./coord_error.png" alt=""><img src="./coord_right.png" alt="">
+            </p>
+            <p style="color: red">问：导入加密的zip或rar压缩包失败？(系统暂停导入zip文件)</p>
+            <p style="color: blue">答：系统中不支持导入加密的zip或rar压缩包，请导入未加密的zip或rar压缩包。</p>
+            <h4 id="nav10">6、RAR压缩工具</h4>
+            <p>压缩工具下载完成后，请根据系统类型安装对应压缩包工具。双击进行安装即可。</p>
+            <p><a href="http://zbph.mnr.gov.cn/qaweb/qalink/DownloadFile/WinRar.rar">WinRAR下载</a></p>
+        </div>
+    </div>
+    <!-- <div class="left_menu">
+        <b>1、数据导入</b><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://zbph.mnr.gov.cn/qaweb/qalink/basic/7.html#nav1">1、数据导入</a><br>
+        <b>2、坐标基本要求</b><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://zbph.mnr.gov.cn/qaweb/qalink/basic/7.html#nav2">坐标基本要求</a><br>
+        <b>3、坐标格式要求</b><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://zbph.mnr.gov.cn/qaweb/qalink/basic/7.html#nav3.1">3.1、shp格式地块信息要求</a><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://zbph.mnr.gov.cn/qaweb/qalink/basic/7.html#nav3.2">3.2、Txt和Excel格式地块信息要求</a><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://zbph.mnr.gov.cn/qaweb/qalink/basic/7.html#nav3.3">3.3、Excel格式坐标信息要求</a><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://zbph.mnr.gov.cn/qaweb/qalink/basic/7.html#nav3.4">3.4、Txt格式坐标信息要求</a><br>
+        <b>4、坐标文件要求</b><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://zbph.mnr.gov.cn/qaweb/qalink/basic/7.html#nav4.1">4.1、shp坐标文件要求</a><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://zbph.mnr.gov.cn/qaweb/qalink/basic/7.html#nav4.2">4.2、*.prj文件格式参考</a><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://zbph.mnr.gov.cn/qaweb/qalink/basic/7.html#nav4.3">4.3、txt坐标文件要求</a><br>
+        <b>5、错误编码对照表</b><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://zbph.mnr.gov.cn/qaweb/qalink/basic/7.html#nav5">错误编码对照表</a><br>
+        <b>6、坐标无法正常预览</b><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://zbph.mnr.gov.cn/qaweb/qalink/basic/7.html#nav6">坐标无法正常预览</a><br>
+        <b>7、坐标上传使用说明</b><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://zbph.mnr.gov.cn/qaweb/qalink/basic/7.html#nav7">坐标上传使用说明</a><br>
+        <b>8、常见问题</b><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://zbph.mnr.gov.cn/qaweb/qalink/basic/7.html#nav8">常见问题</a><br>
+        <b>9、如何查看系统类型</b><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://zbph.mnr.gov.cn/qaweb/qalink/basic/7.html#nav9">如何查看系统类型</a><br>
+        <b>10、RAR压缩工具</b><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://zbph.mnr.gov.cn/qaweb/qalink/basic/7.html#nav10">RAR压缩工具</a><br>
+    </div> -->
+
+
+</body></html>

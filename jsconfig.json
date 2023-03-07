@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "shinegis-client-23d/*": ["./*"]
+    }
+  },
+  "exclude": ["node_modules", "lib"]
+}

@@ -1,0 +1,102 @@
+@import 'mixins/mixins';
+@import 'common/var';
+
+@include b(plot-style) {
+  position: absolute;
+  width: 300px;
+  border-radius: 4px;
+
+  .clearfix {
+    text-align: center;
+  }
+  .title {
+    color: #333;
+    font-size: 14px;
+  }
+
+  .el-card__header {
+    padding: 10px 20px;
+  }
+  .el-card__body {
+    padding: 0px;
+  }
+  .el-form-item {
+    margin-top: 12px;
+    margin-bottom: 0px;
+  }
+  .el-form-item__label {
+    height: 30px;
+    line-height: 30px;
+  }
+  .el-form-item__content {
+    height: 30px;
+    line-height: 30px;
+  }
+  .el-col {
+    height: 30px;
+    line-height: 30px;
+  }
+  .el-input-number span {
+    width: 30px;
+    height: 30px;
+  }
+  .el-input-number {
+    line-height: 30px !important;
+  }
+
+  .el-input-number {
+    width: 80% !important;
+  }
+
+  .el-input__inner {
+    height: 30px;
+    line-height: 30px;
+  }
+  .el-color-picker {
+    height: 30px;
+  }
+  .el-color-picker__trigger {
+    border: none;
+    width: 30px;
+    height: 30px;
+    padding: 0 0 0 0;
+  }
+  .el-color-picker__icon {
+    display: none;
+  }
+  .avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  .avatar-uploader .el-upload:hover {
+    border-color: #409eff;
+  }
+  .avatar-uploader-icon {
+    font-size: 20px;
+    color: #00f7c7;
+    padding: 20px;
+    border: 1px dashed #7d7d7d;
+    border-radius: 4px;
+    display: inline-block;
+    line-height: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .avatar {
+    width: 62px;
+    height: 62px;
+    display: block;
+  }
+  .btn {
+    position: relative;
+    width: 112px;
+    height: 30px;
+    padding: 0;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

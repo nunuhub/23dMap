@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="5px" viewBox="0 0 10 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.996078 0 0 0 0 0.992157 0 0 0 0 0.980392 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2" transform="translate(-1783.000000, -38.000000)">
+            <g id="btn" transform="translate(1293.000000, 24.000000)">
+                <g id="编组&lt;h10&gt;" transform="translate(15.000000, 6.000000)">
+                    <g id="tab&lt;h5&gt;" transform="translate(421.000000, 0.000000)">
+                        <g id="icon/arrow/triangle/down" transform="translate(54.000000, 5.000000)" filter="url(#filter-1)">
+                            <g id="箭头">
+                                <rect id="矩形" fill="#000000" fill-rule="nonzero" opacity="0" x="0" y="0" width="10" height="10"></rect>
+                                <path d="M9.375,7.0138845 C9.375,7.1454704 9.32103796,7.25953673 9.21312791,7.35612549 C9.10520383,7.45270025 8.97686851,7.50065152 8.82812194,7.5 L1.17187132,7.5 C1.02385473,7.5 0.895519406,7.45204204 0.786879396,7.35612548 C0.678239371,7.26019493 0.624277331,7.14612861 0.625,7.01388448 C0.625737284,6.88168238 0.679699325,6.76758805 0.786879396,6.6716715 L4.61499768,3.26888182 C4.72292176,3.17295128 4.85124305,3.125 5.00000365,3.125 C5.14875021,3.125 5.27707149,3.17296528 5.38499558,3.26888182 L9.21311386,6.6716715 C9.32103796,6.76758806 9.375,6.88168239 9.375,7.0138845 Z" id="路径" fill="#616266" transform="translate(5.000000, 5.312500) scale(1, -1) translate(-5.000000, -5.312500) "></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
